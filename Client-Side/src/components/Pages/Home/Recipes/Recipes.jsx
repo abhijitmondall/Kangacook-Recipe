@@ -37,6 +37,7 @@ function Recipes() {
             className={{ className: styles["recipe__wrap"] }}
           >
             <span
+              title="Click to the icon to delete this recipe!"
               className={styles["recipe_dlt"]}
               onClick={(e) => handleDeleteRecipe(e, recipe._id)}
             >
