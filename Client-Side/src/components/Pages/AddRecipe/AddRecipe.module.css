@@ -3,6 +3,21 @@
   padding: 9rem;
 }
 
+.section__title {
+  font-size: var(--text-h1);
+  font-weight: 700;
+  text-align: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 1.6rem;
+  background-image: linear-gradient(
+    90deg,
+    var(--color-secondary) 0%,
+    var(--color-tertiary) 100%
+  );
+}
+
 .form {
   width: 60%;
   margin: 0 auto;

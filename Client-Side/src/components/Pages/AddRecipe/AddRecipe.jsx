@@ -24,7 +24,6 @@ const reducer = (state, action) => {
       return { ...state, cookingTimes: action.payload };
     case "servings":
       return { ...state, servings: action.payload };
-
     case "reset":
       return initialState;
     default:
@@ -65,6 +64,7 @@ function AddRecipe() {
 
   return (
     <section className={styles["section__wrap"]}>
+      <h1 className={styles["section__title"]}>Add Recipe</h1>
       <form className={styles["form"]} onSubmit={handleSubmit}>
         <div className={styles["form__input"]}>
           <Input

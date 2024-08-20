@@ -46,7 +46,7 @@ function Footer() {
             </div>
           </div>
           <div className={styles["footer__text"]}>
-            <p>@2023 RecipeRealm. All Rights Reserved</p>
+            <p>@2024 Kangacook-Recipe. All Rights Reserved</p>
           </div>
         </section>
       </footer>
