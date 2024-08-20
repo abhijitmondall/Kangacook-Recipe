@@ -2,7 +2,7 @@ import Header from "../Header/Header";
 import { Outlet, ScrollRestoration } from "react-router-dom";
 import Footer from "../Footer/Footer";
 
-const Main = () => {
+function Main() {
   return (
     <>
       <Header />
@@ -13,6 +13,6 @@ const Main = () => {
       <Footer />
     </>
   );
-};
+}
 
 export default Main;

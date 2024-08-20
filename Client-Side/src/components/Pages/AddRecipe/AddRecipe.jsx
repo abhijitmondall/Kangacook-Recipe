@@ -4,7 +4,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import Button from "../../UI/Button/Button";
-import Card from "../../UI/Card/Card";
 import Input from "../../UI/Input/Input";
 import styles from "./AddRecipe.module.css";
 

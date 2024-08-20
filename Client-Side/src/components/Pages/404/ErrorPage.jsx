@@ -1,7 +1,7 @@
 import styles from "./ErrorPage.module.css";
 import { Link } from "react-router-dom";
 
-const ErrorPage = () => {
+function ErrorPage() {
   return (
     <>
       <section className={styles["error"]}>
@@ -16,6 +16,6 @@ const ErrorPage = () => {
       </section>
     </>
   );
-};
+}
 
 export default ErrorPage;

@@ -2,7 +2,7 @@ import Styles from "./HeroBanner.module.css";
 import { Link } from "react-router-dom";
 import { BsArrowUpRight } from "react-icons/bs";
 
-const HeroBanner = () => {
+function HeroBanner() {
   return (
     <section className="hero">
       <div className="hero__wrap">
@@ -34,6 +34,6 @@ const HeroBanner = () => {
       </div>
     </section>
   );
-};
+}
 
 export default HeroBanner;

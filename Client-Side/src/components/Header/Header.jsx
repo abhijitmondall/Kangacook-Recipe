@@ -4,7 +4,7 @@ import Icons from "./../../assets/icons.svg";
 import { Link, NavLink } from "react-router-dom";
 import Button from "../UI/Button/Button";
 
-const Header = () => {
+function Header() {
   return (
     <header className={Styles["header"]}>
       <div className={Styles["logo-wrap"]}>
@@ -45,6 +45,6 @@ const Header = () => {
       </nav>
     </header>
   );
-};
+}
 
 export default Header;

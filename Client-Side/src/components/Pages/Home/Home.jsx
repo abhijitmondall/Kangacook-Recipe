@@ -2,7 +2,7 @@ import HeroBanner from "./HeroBanner/HeroBanner";
 import Recipes from "./Recipes/Recipes";
 import Subscribe from "./Subscribe/Subscribe";
 
-const Home = () => {
+function Home() {
   return (
     <div className="container">
       <>
@@ -12,6 +12,6 @@ const Home = () => {
       </>
     </div>
   );
-};
+}
 
 export default Home;
