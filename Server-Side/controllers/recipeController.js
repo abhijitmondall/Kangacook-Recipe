@@ -36,3 +36,19 @@ exports.getAllRecipes = async (req, res, next) => {
     });
   }
 };
+
+exports.deleteRecipe = async (req, res, next) => {
+  const recipe = await Recipe.findByIdAndDelete(req.params.id);
+
+  if (!recipe) {
+    return res.status(404).json({
+      status: "error",
+      message: "Recipe not found",
+    });
+  }
+
+  res.status(204).json({
+    status: "success",
+    data: null,
+  });
+};
