@@ -6,8 +6,7 @@ const recipeController = require("./../controllers/recipeController");
 router
   .route("/")
   .get(recipeController.getAllRecipes)
-  .post(recipeController.createRecipe)
-  .delete(recipeController.deleteRecipe);
+  .post(recipeController.createRecipe);
 
 router.route("/:id").delete(recipeController.deleteRecipe);
 
