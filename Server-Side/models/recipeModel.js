@@ -13,10 +13,12 @@ const recipeSchema = new mongoose.Schema({
 
   cookingTimes: {
     type: Number,
+    min: 1,
   },
 
   servings: {
     type: Number,
+    min: 1,
   },
 
   createdAt: {

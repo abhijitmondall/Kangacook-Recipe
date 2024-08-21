@@ -1,8 +1,10 @@
 import useFetch from "../../../../hooks/useFetch";
 import Card from "../../../UI/Card/Card";
 import { IoTrashBin } from "react-icons/io5";
-import styles from "./Recipes.module.css";
 import Swal from "sweetalert2";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import styles from "./Recipes.module.css";
 
 function Recipes() {
   const { data, isLoading, setId, setType } = useFetch();
@@ -21,6 +23,7 @@ function Recipes() {
     if (confirm.isConfirmed) {
       setId(id);
       setType("DELETE");
+      toast("Recipe successfully Deleted!");
     }
   }
 
@@ -50,6 +53,7 @@ function Recipes() {
               <div> Cooking Times: {recipe.cookingTimes}</div>
               <div> Servings: {recipe.servings}</div>
             </div>
+            <ToastContainer />
           </Card>
         ))}
       </div>

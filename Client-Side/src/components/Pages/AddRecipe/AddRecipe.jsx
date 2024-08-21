@@ -2,7 +2,6 @@ import { useReducer, useState } from "react";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 import Button from "../../UI/Button/Button";
 import Input from "../../UI/Input/Input";
 import styles from "./AddRecipe.module.css";
@@ -95,6 +94,7 @@ function AddRecipe() {
           <Input
             inputObj={{
               type: "Number",
+              min: 1,
               placeholder: "Cooking Time",
               name: "cookingTime",
               onChange: (e) =>
@@ -107,6 +107,7 @@ function AddRecipe() {
           <Input
             inputObj={{
               type: "Number",
+              min: 1,
               placeholder: "Servings",
               name: "servings",
               onChange: (e) =>

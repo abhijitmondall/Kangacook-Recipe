@@ -1,6 +1,6 @@
-import Styles from "./HeroBanner.module.css";
 import { Link } from "react-router-dom";
 import { BsArrowUpRight } from "react-icons/bs";
+import Styles from "./HeroBanner.module.css";
 
 function HeroBanner() {
   return (
